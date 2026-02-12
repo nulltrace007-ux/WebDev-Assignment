@@ -1,61 +1,3 @@
-// // function doHomework(){
-// //     const p = new Promise((res,rej)=>{
-// //         let done = true;
-// //         setTimeout(()=>{
-// //             if (done){
-// //                 console.log("Homework Completed")
-// //                 res("Homework is done")
-
-// //             }else{
-// //                 rej("Homework not completed")
-// //             }
-// //         },2000)
-// //     });return p
-// // }
-// // function eatDinner(){
-// //     const p = new Promise((res,rej)=>{
-
-// //     }
-// // }
-
-// // function gotoPlayground(){
-// //     const p new Promise((res,rej)=>{
-// //         let done = true;
-// //         setTimeout(() => {
-// //             if done{
-// //                 console.log("Went to the playground")
-// //                 res("Playground time")
-
-// //             }else{
-// //                 rej("Not allowed to go!")
-// //             }
-            
-// //         },2000);
-// //     })
-// //     return p
-// // }
-
-// // doHomework().then((data)=>{
-// //     console.log(data)
-// //     return eatdinner()
-// // }).then((data)=>{
-// //     console.log(data)
-// //     return gotoPlayground()
-// // }).then((data)=>)
-
-// function orderFood(){
-//     return new Promise((res,rej)=>{
-//         setInterval(()=>{
-//             console.log("Food order")
-//             res()
-//         },2000)
-//     })
-// }
-
-// async function orderFood() {
-    
-// }
-
 const form = document.querySelector("#form")
 const eventTitle = document.querySelector("#eventitle")
 const eventDate = document.querySelector("#eventDate")
@@ -64,7 +6,6 @@ const description = document.querySelector("#description")
 const eventcards = document.querySelector(".cards")
 const clearAllBtn = document.querySelector("#clearAll")
 const addSampleBtn = document.querySelector("#addSample")
-
 form.addEventListener("submit", function(event){
     event.preventDefault()
 
@@ -90,7 +31,6 @@ form.addEventListener("submit", function(event){
 })
 
 
-// Delete card using event delegation
 eventcards.addEventListener("click", function(e){
     if(e.target.classList.contains("deletecard")){
         e.target.parentElement.remove()
@@ -98,13 +38,13 @@ eventcards.addEventListener("click", function(e){
 })
 
 
-// Clear all cards
+
 clearAllBtn.addEventListener("click", function(){
     eventcards.innerHTML = ""
 })
 
 
-// Add sample events
+
 addSampleBtn.addEventListener("click", function(){
 
     const sampleData = [
